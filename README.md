@@ -23,5 +23,5 @@ This project is a fully responsive, animated, and interactive portfolio website 
 - 📬 **Contact Section:** Reach out directly via email or phone  
 - 📄 **Download CV:** One-click resume download without leaving the page  
 
-## 📂 Folder Structure  
+
 
