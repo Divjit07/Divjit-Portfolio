@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Divjit Singh - Full-Stack Developer Portfolio" />
+  <meta name="author" content="Divjit Singh" />
+  <title>Divjit Portfolio</title>
+
+  <!-- Favicon (place assets/images/favicon.ico in your project) -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 3D background -->
+  <div id="canvas-container"></div>
+
+  <!-- Floating SVG shapes -->
+  <div class="floating-shapes">
+    <svg class="shape" width="200" height="200" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#00ffff" stroke-width="2"/>
+    </svg>
+    <svg class="shape" width="150" height="150" viewBox="0 0 150 150">
+      <rect x="25" y="25" width="100" height="100" fill="none" stroke="#a855f7" stroke-width="2"/>
+    </svg>
+    <svg class="shape" width="180" height="180" viewBox="0 0 180 180">
+      <polygon points="90,10 170,170 10,170" fill="none" stroke="#ec4899" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <div class="content">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="logo">&lt;DS/&gt;</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <div class="hero-badge-inner">
+            <span>DS</span>
+          </div>
+        </div>
+
+        <!-- Rectangular info card (static) -->
+        <div class="hero-info-card">
+          <h3>DIGITAL SOLUTIONS</h3>
+          
+        </div>
+
+        <div class="glitch">DIVJIT SINGH</div>
+        <div class="subtitle">[ Full-Stack Developer | AI Enthusiast ]</div>
+        <p class="tagline">Crafting next-generation digital experiences with bleeding-edge technology</p>
+
+        <div class="cta-buttons">
+          <button class="btn btn-primary"
+                  onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+            <span>EXPLORE PROJECTS</span>
+          </button>
+
+          <!-- DOWNLOAD CV (docx) - stays on page -->
+          <a id="downloadCvBtn" href="assets/Divjit_Singh_Resume.docx" class="btn btn-secondary">
+            DOWNLOAD CV
+          </a>
+        </div>
+
+        <div class="stats">
+          <div class="stat-card">
+            <div style="font-size: 2rem; color: #00ffff;">★</div>
+            <div style="font-weight: bold; margin-top: 0.5rem;">5+ CERTIFICATIONS</div>
+          </div>
+          <div class="stat-card">
+            <div style="font-size: 2rem; color: #a855f7;">🎓</div>
+            <div style="font-weight: bold; margin-top: 0.5rem;">DEAN'S LIST</div>
+          </div>
+          <div class="stat-card">
+            <div style="font-size: 2rem; color: #ec4899;">⚡</div>
+            <div style="font-weight: bold; margin-top: 0.5rem;">MERN EXPERT</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About (POLISHED) -->
+    <section class="section" id="about">
+      <div class="section-title">
+        <div class="section-label">&lt;About&gt;</div>
+        <h2 class="section-heading">SYSTEM.PROFILE</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-content">
+        <p class="about-text">
+          Motivated and results-driven IT professional specializing in
+          <span class="highlight-cyan">full-stack web development</span>, with proven
+          expertise in building <span class="highlight-purple">scalable</span>,
+          <span class="highlight-pink">high-performance</span>, and user-centric digital
+          solutions. Strong foundation in modern technologies including
+          <span class="highlight-cyan">Node.js</span>, <span class="highlight-cyan">React.js</span>,
+          <span class="highlight-cyan">Java</span>, <span class="highlight-cyan">PHP</span>,
+          <span class="highlight-cyan">XML</span>, <span class="highlight-cyan">API development</span>, and
+          <span class="highlight-cyan">advanced routing</span>, with hands-on experience designing,
+          deploying, and optimizing complex applications.
+        </p>
+        <p class="about-text">
+          Skilled at integrating <span class="highlight-purple">backend systems</span>
+          with dynamic front-end experiences, architecting
+          <span class="highlight-cyan">API-driven</span> solutions, and improving reach with
+          <span class="highlight-pink">SEO</span> best practices and
+          <span class="highlight-pink">Google Ads</span> campaign strategy to maximize visibility
+          and engagement.
+        </p>
+        <p class="about-text">
+          Currently pursuing a <strong>Graduate Certificate in Information Technology
+          Solutions</strong> at <strong>Humber College</strong>, and passionate about
+          applying technical expertise, problem-solving, and innovative thinking to deliver
+          impactful, future-ready solutions in a rapidly evolving tech landscape.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3 class="card-title">DEAN'S LIST</h3>
+          <p class="card-text">Achieved Dean's List honors for Semester 1 & 2 at Humber College</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3 class="card-title">MERN STACK</h3>
+          <p class="card-text">Certified MERN Stack Developer with hands-on project experience</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3 class="card-title">FULL-STACK</h3>
+          <p class="card-text">Specialist in building scalable, efficient web applications</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3 class="card-title">INNOVATION</h3>
+          <p class="card-text">Driven by passion for cutting-edge technology and problem-solving</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="section-title">
+        <div class="section-label">&lt;Education&gt;</div>
+        <h2 class="section-heading">KNOWLEDGE.BASE</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <h3 class="card-title">Ontario Graduate Certificate</h3>
+          <p class="card-text" style="color: #00ffff; font-weight: bold;">Information Technology Solutions</p>
+          <p class="card-text">Humber College, Toronto, ON</p>
+          <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(0, 255, 255, 0.2); border-radius: 8px; text-align: center;">
+            <strong>★ DEAN'S LIST - SEM 1 & 2 ★</strong>
+          </div>
+          <div class="tech-tags" style="margin-top: 1rem;">
+            <span class="tech-tag">Web Development</span>
+            <span class="tech-tag">Programming</span>
+            <span class="tech-tag">Database</span>
+            <span class="tech-tag">ML</span>
+            <span class="tech-tag">Cloud</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <h3 class="card-title">Bachelor of Technology</h3>
+          <p class="card-text" style="color: #a855f7; font-weight: bold;">Electronics and Communication Engineering</p>
+          <p class="card-text">DAV Institute of Engineering and Technology, India</p>
+          <div class="tech-tags" style="margin-top: 1rem;">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">Data Science</span>
+            <span class="tech-tag">AI</span>
+            <span class="tech-tag">OOP</span>
+            <span class="tech-tag">DBMS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="section-title">
+        <div class="section-label">&lt;Experience&gt;</div>
+        <h2 class="section-heading">WORK.HISTORY</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="card experience-card">
+        <div class="card-icon">💼</div>
+        <h3 class="card-title">Junior Trainee</h3>
+        <p class="card-text" style="color: #00ffff; font-weight: bold; font-size: 1.2rem;">Future Finders</p>
+        <p class="card-text">Ajitgarh, Punjab</p>
+        <div class="experience-details">
+          <ul class="experience-list">
+            <li>Completed 6-month industrial training in MERN stack development</li>
+            <li>Built Social Echo: Dynamic social platform with profile creation, posts, and discussions</li>
+            <li>Coordinated logistics for multiple campus events</li>
+            <li>Provided excellent customer service and addressed attendee queries</li>
+            <li>Demonstrated strong problem-solving skills in dynamic environments</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="section-title">
+        <div class="section-label">&lt;Skills&gt;</div>
+        <h2 class="section-heading">TECH.STACK</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div style="margin-bottom: 3rem;">
+        <h3 style="font-size: 2rem; color: #00ffff; margin-bottom: 2rem; text-align: center;">[CERTIFICATIONS]</h3>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+          <div class="card cert-card"><div class="card-icon">★</div><p style="font-weight: bold;">Java SE Developer</p></div>
+          <div class="card cert-card"><div class="card-icon">★</div><p style="font-weight: bold;">XML Developer</p></div>
+          <div class="card cert-card"><div class="card-icon">★</div><p style="font-weight: bold;">MERN Stack</p></div>
+          <div class="card cert-card"><div class="card-icon">★</div><p style="font-weight: bold;">JavaScript</p></div>
+          <div class="card cert-card"><div class="card-icon">★</div><p style="font-weight: bold;">Python Programming</p></div>
+        </div>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <!-- IMPORTANT: data-width used and JS will animate -->
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span class="skill-name">React.js</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" data-width="90"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span class="skill-name">Node.js</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" data-width="85"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" data-width="90"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span class="skill-name">Java</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" data-width="85"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span class="skill-name">Python</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" data-width="80"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span class="skill-name">SQL/Database</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" data-width="85"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span class="skill-name">PHP</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" data-width="75"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span class="skill-name">Machine Learning</span>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" data-width="70"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section-title">
+        <div class="section-label">&lt;Projects&gt;</div>
+        <h2 class="section-heading">PORTFOLIO.SHOWCASE</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="grid">
+        <div class="project-card">
+          <div class="project-image">🌐</div>
+          <div class="project-content">
+            <h3 class="project-title">Social Echo</h3>
+            <p class="card-text">Dynamic social platform providing interactive environment for users to create profiles, post updates, connect with friends, and engage in discussions</p>
+            <div class="tech-tags">
+              <span class="tech-tag">MongoDB</span><span class="tech-tag">Express.js</span>
+              <span class="tech-tag">React.js</span><span class="tech-tag">Node.js</span>
+            </div>
+            <div class="project-links">
+              <button class="project-btn">LIVE DEMO</button>
+              <button class="project-btn">CODE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">✨</div>
+          <div class="project-content">
+            <h3 class="project-title">AllStars E-commerce</h3>
+            <p class="card-text">Fully functional e-commerce platform for shirt sales with shopping cart, user authentication, product filtering, and responsive design</p>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span>
+              <span class="tech-tag">Bootstrap</span><span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <button class="project-btn">LIVE DEMO</button>
+              <button class="project-btn">CODE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">🎃</div>
+          <div class="project-content">
+            <h3 class="project-title">Halloween Store</h3>
+            <p class="card-text">Theme-based e-commerce website with Halloween aesthetic, product categorization, and secure payment gateway</p>
+            <div class="tech-tags">
+              <span class="tech-tag">React.js</span><span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Payment API</span>
+            </div>
+            <div class="project-links">
+              <button class="project-btn">LIVE DEMO</button>
+              <button class="project-btn">CODE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">💼</div>
+          <div class="project-content">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="card-text">Personal portfolio showcasing skills and projects with dynamic animations and responsive design</p>
+            <div class="tech-tags">
+              <span class="tech-tag">React.js</span><span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Framer Motion</span>
+            </div>
+            <div class="project-links">
+              <button class="project-btn">LIVE DEMO</button>
+              <button class="project-btn">CODE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="section-title">
+        <div class="section-label">&lt;Contact&gt;</div>
+        <h2 class="section-heading">CONNECT.INIT</h2>
+        <div class="section-line"></div>
+        <p style="text-align: center; font-size: 1.5rem; color: #888; margin-top: 1rem;">
+          Let's build something <span style="color: #00ffff; font-weight: bold;">extraordinary</span> together
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+        <div class="card contact-card">
+          <div class="card-icon">📍</div>
+          <h3 class="card-title">LOCATION</h3>
+          <p class="card-text">Mississauga, Ontario</p>
+        </div>
+        <div class="card contact-card">
+          <div class="card-icon">📧</div>
+          <h3 class="card-title">EMAIL</h3>
+          <a href="mailto:divjitsingh2001@yahoo.com" class="card-text contact-link">divjitsingh2001@yahoo.com</a>
+        </div>
+        <div class="card contact-card">
+          <div class="card-icon">📱</div>
+          <h3 class="card-title">PHONE</h3>
+          <a href="tel:+14374502129" class="card-text contact-link">+1 (437) 450-2129</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label class="form-label">NAME</label>
+          <input type="text" class="form-input" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">EMAIL</label>
+          <input type="email" class="form-input" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">SUBJECT</label>
+          <input type="text" class="form-input" placeholder="Project inquiry" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">MESSAGE</label>
+          <textarea class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;"><span>SEND MESSAGE</span></button>
+      </form>
+    </section>
+
+    <footer style="text-align: center; padding: 3rem 2rem; border-top: 1px solid rgba(0, 255, 255, 0.3);">
+      <div class="logo" style="margin-bottom: 1rem;">&lt;DS/&gt;</div>
+      <p style="color: #888; margin-bottom: 0.5rem;">Designed & Built by <span style="color: #a855f7; font-weight: bold;">Divjit Singh</span></p>
+      <p style="color: #555; font-size: 0.9rem;">© 2024 Divjit Singh. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
